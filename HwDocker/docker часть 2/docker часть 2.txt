@@ -1,0 +1,31 @@
+1. Создать каталог docker
+$ sudo mkdir docker
+
+2. Вывести на экран список файлов и каталогов
+$ ls
+
+3. Вывести на экран размер каталога docker
+$ du -h docker
+
+4. Создать в каталоге docker документ с названием docker без расширения
+$ cd docker/
+$ sudo touch docker
+
+5. Из документа docker создать свой image, который выводит "Hello world"
+$sudo nano docker
+FROM alpine
+CMD ["echo", "Hello world"]
+$sudo docker build -t hello -f /docker/docker .
+
+6. Запустить свой image
+$sudo docker run --rm hello
+$ sudo docker run -d hello
+
+7. Вывести на экран список процессов
+$ sudo ps -eF
+
+8. Вывести анализ дискогого пространства
+$ df -h
+
+9. Убить процесс "Hello world" 
+$sudo docker kill hello
