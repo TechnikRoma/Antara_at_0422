@@ -1,0 +1,47 @@
+1. Установить Docker
+$sudo apt install docker.io
+
+2. Скачать и установить image Tomcat
+$ sudo docker pull tomcat
+
+3. Посмотреть ip адресс компьютера
+$ ip a
+
+4. Показать докер контейнеры
+$ sudo docker ps
+
+5. Показать все контейнеры, которые были запущены
+$ sudo docker ps -a
+
+6. Запустить tomcat docker
+$ sudo docker run tomcat
+$ sudo docker run -d tomcat
+
+7. Посмотреть запущенные процессы на линукс
+$ sudo ps -eF
+
+8. Убить запущенный процесс tomcat docker
+$ sudo docker kill 371dd42642ca
+
+9. Запустить tomcat docker
+$ sudo docker run -d tomcat
+
+10. Посмотреть запущенные процессы на линукс
+$ sudo docker ps
+$ sudo ps -eF
+
+11. Найти docker hello-world
+$ sudo docker search hello-world
+
+12. Запустить docker hello-world
+$ sudo docker run hello-world
+
+13. Удалить image docker hello-world
+$ sudo docker image rm hello-world -f
+
+14. Удалить контейнер
+$ sudo docker container rm hello-world -f
+
+15. Вывести анализ дискового пространства
+$ du
+$ df -h
